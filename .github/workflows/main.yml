@@ -13,4 +13,8 @@ jobs:
       - uses: actions/checkout@v3     
       - name: "login to docker hub"
         run: docker login --username ${{ secrets.docker_username}} --password ${{ secrets.docker_token }}
+      - name: "building docker images"
+        run: docker build -t ${{ secrets.docker_username}}/myimage .
+      - name: "pushing to docker hub"
+        run: docker push ${{ secrets.docker_username}}/myimage    
       
