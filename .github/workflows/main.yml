@@ -15,6 +15,9 @@ jobs:
 
       - name: 'testing printing'
         run : echo tasneem
+        
       - name: 'printing folder contents'
-        run : ls    
+        run : ls 
+
+      - uses: actions/checkout@v3     
 
