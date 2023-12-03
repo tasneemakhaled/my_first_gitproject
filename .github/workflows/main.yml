@@ -8,17 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    steps:
 
-    steps: 
-      - name: 'testing github actions'
-        run: pwd
-
-      - name: 'testing printing'
-        run : echo tasneem
-
-      - name: 'printing folder contents'
-        run : ls 
-        - uses: actions/checkout@v3     
+      - uses: actions/checkout@v3     
       - name: "login to docker hub"
         run: docker login --username tasnemmkhaled350 --password dckr_pat_sO_SIW-3J3hlS4ObG_GPYeM10gU
       
