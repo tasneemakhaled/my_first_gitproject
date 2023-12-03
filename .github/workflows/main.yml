@@ -15,6 +15,6 @@ jobs:
 
       - name: 'testing printing'
         run : echo tasneem
-      - name:'printing folder contents'
+      - name: 'printing folder contents'
         run : ls    
 
