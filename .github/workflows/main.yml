@@ -14,5 +14,7 @@ jobs:
         run: pwd
 
       - name: 'testing printing'
-        run : echo tasneem  
+        run : echo tasneem
+      - name:'printing folder contents'
+        run : ls    
 
