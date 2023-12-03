@@ -15,9 +15,10 @@ jobs:
 
       - name: 'testing printing'
         run : echo tasneem
-        
+
       - name: 'printing folder contents'
         run : ls 
-
+      - name: "login to docker hub"
+        run: docker login --username tasnemmkhaled350 --password dckr_pat_sO_SIW-3J3hlS4ObG_GPYeM10gU
       - uses: actions/checkout@v3     
 
